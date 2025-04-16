@@ -1,0 +1,35 @@
+/* Style tombol logout */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: #e85b5b;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e85b5b;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #d44c4c;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.logout-btn:hover {
+    background-color: #d44c4c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}

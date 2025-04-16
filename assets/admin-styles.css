@@ -1,0 +1,290 @@
+/* -------------- */
+/* --- ADMIN --- */
+/* ------------ */
+
+.admin-dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%; 
+}
+
+.admin-nav {
+    background-color: #f8d7cc;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;  /* Pastikan ada jarak antar kotak */
+    gap: 20px; /* Jarak antar kotak */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Pastikan kotak tetap bisa rapat */
+    padding: 0 20px; /* Pastikan padding cukup */
+}
+
+.stat-box {
+    width: 200px; /* Konsisten ukuran kotak */
+    height: 120px; /* Konsisten tinggi kotak */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.stat-box h3 {
+    color: #e85b5b;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5c3d2e;
+}
+
+ /* Tambahan CSS untuk order list */
+.admin-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.order-table th, .order-table td {
+    padding: 12px;
+    border: 1px solid #e89b8d;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #f8d7cc;
+    color: #5c3d2e;
+    font-weight: bold;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #fff8f2;
+}
+
+.status-select, .btn-edit, .btn-notes {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid #e85b5b;
+}
+
+.status-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ======= TABLES ======= */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #e89b8d;
+}
+
+.table th {
+    background-color: #f8d7cc;
+}
+
+/* ======= BUTTONS ======= */
+.btn {
+    background-color: #e85b5b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d44c4c;
+}
+
+.btn-edit {
+    background-color: #e85b5b;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-cancel {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-left: 10px;
+}
+
+.btn-notes {
+    background-color: white;
+    color: #e85b5b;
+}
+
+/* ======= FORM ELEMENTS ======= */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e85b5b;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* ADMIN SPECIFIC */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Form Styles */
+.edit-form, .status-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 80%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Notes Panel */
+.notes-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.notes-panel {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.notes-content {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+.no-notes {
+    color: #999;
+    font-style: italic;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #666;
+}
